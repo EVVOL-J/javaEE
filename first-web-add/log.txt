@@ -1,0 +1,20 @@
+19:39:09,068 ERROR [org.jboss.as.controller.management-operation] (management-handler-thread - 1) WFLYCTL0013: Operation ("add") failed - address: ([("deployment" => "first-web-add.war")]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.deployment.unit.\"first-web-add.war\".undertow-deployment.UndertowDeploymentInfoService" => "Failed to start service
+    Caused by: java.lang.UnsupportedClassVersionError: Failed to link ru/geekbrains/FirstServlet (Module \"deployment.first-web-add.war\" from Service Module Loader): ru/geekbrains/FirstServlet has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0"}}
+19:39:09,076 ERROR [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0021: Deploy of deployment "first-web-add.war" was rolled back with the following failure message:
+{"WFLYCTL0080: Failed services" => {"jboss.deployment.unit.\"first-web-add.war\".undertow-deployment.UndertowDeploymentInfoService" => "Failed to start service
+    Caused by: java.lang.UnsupportedClassVersionError: Failed to link ru/geekbrains/FirstServlet (Module \"deployment.first-web-add.war\" from Service Module Loader): ru/geekbrains/FirstServlet has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0"}}
+19:39:09,090 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment first-web-add.war (runtime-name: first-web-add.war) in 14ms
+19:44:38,525 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location C:\java\wildfly-22.0.0.Final\standalone\data\content\72\b25376edcac05cd668501c77bfdfb6998f8186\content
+19:44:38,528 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "first-web-add.war" (runtime-name: "first-web-add.war")
+19:44:38,744 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 85) WFLYUT0021: Registered web context: '/first-web-add' for server 'default-server'
+19:44:38,843 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "first-web-add.war" (runtime-name : "first-web-add.war")
+19:46:43,606 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 80) WFLYDR0009: Content C:\java\wildfly-22.0.0.Final\standalone\data\content\01\24de8f13e0445c033ded8b6104ae52af749963 is obsolete and will be removed
+19:46:43,609 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 80) WFLYDR0002: Content removed from location C:\java\wildfly-22.0.0.Final\standalone\data\content\01\24de8f13e0445c033ded8b6104ae52af749963\content
+19:46:43,609 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 80) WFLYDR0009: Content C:\java\wildfly-22.0.0.Final\standalone\data\content\28\9e1b17ffa38d70ab0f049fca85947fa0df883a is obsolete and will be removed
+19:46:43,610 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 80) WFLYDR0002: Content removed from location C:\java\wildfly-22.0.0.Final\standalone\data\content\28\9e1b17ffa38d70ab0f049fca85947fa0df883a\content
+19:46:52,316 INFO  [ru.geekbrains.FirstServlet] (default task-1) FirstServlet initialized
+19:46:52,317 INFO  [ru.geekbrains.FirstServlet] (default task-1) New request to FirstServlet
+19:47:09,614 INFO  [ru.geekbrains.FirstServlet] (default task-1) New request to FirstServlet
+19:47:18,399 INFO  [ru.geekbrains.FirstServlet] (default task-1) New request to FirstServlet
+19:47:19,029 INFO  [ru.geekbrains.FirstServlet] (default task-1) New request to FirstServlet
+19:47:56,164 INFO  [ru.geekbrains.FirstServlet] (default task-1) New request to FirstServlet
