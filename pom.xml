@@ -17,6 +17,7 @@
 
     <modules>
         <module>first-web-add</module>
+        <module>first-jsf-app</module>
     </modules>
 
 </project>
